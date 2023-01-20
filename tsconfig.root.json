@@ -1,9 +1,31 @@
 {
   "compilerOptions": {
+    "strict": true,
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "Node",
     "noImplicitAny": true,
-    "allowSyntheticDefaultImports": true
-  }
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "rootDir": ".",
+    "paths": {
+      "@common-shared": ["common-shared/index.ts"],
+      "@common-shared/*": ["common-shared/src/*"],
+      "@server-api": ["server-api/index.ts"],
+      "@server-api/*": ["server-api/src/*"],
+      "@server-shared": ["server-shared/index.ts"],
+      "@server-shared/*": ["server-shared/src/*"],
+      "@web-client": ["web-client/index.ts"],
+      "@web-client/*": ["web-client/src/*"],
+      "@web-shared": ["web-shared/index.ts"],
+      "@web-shared/*": ["web-shared/src/*"]
+    }
+  },
+  "references": [
+    { "path": "./common-shared" },
+    { "path": "./server-api" },
+    { "path": "./server-shared" },
+    { "path": "./web-client" },
+    { "path": "./web-shared" }
+  ]
 }
