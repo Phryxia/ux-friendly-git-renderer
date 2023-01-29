@@ -16,6 +16,7 @@
     "prettier": "2.8.3"
   },
   "scripts": {
-    "dev:web-client": "parallel --ungroup ::: \"yarn workspace common-shared dev\" \"yarn workspace web-shared dev\" \"yarn workspace web-client dev\""
+    "dev:web-client": "parallel --ungroup ::: \"yarn workspace common-shared dev\" \"yarn workspace web-shared dev\" \"yarn workspace web-client dev\"",
+    "dev:server-api": "parallel --ungroup ::: \"yarn workspace common-shared dev\" \"yarn workspace server-shared dev\" \"yarn workspace server-api start\""
   }
 }

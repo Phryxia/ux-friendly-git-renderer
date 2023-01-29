@@ -1,0 +1,11 @@
+{
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "topLevelAwait": true,
+      "tsx": true
+    },
+    "externalHelpers": true,
+    "target": "es2017"
+  }
+}

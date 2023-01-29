@@ -1,14 +1,14 @@
 {
-  "extends": "../tsconfig.root.json",
+  "extends": "../tsconfig.shared.json",
   "compilerOptions": {
     "jsx": "react-jsx",
-    "declaration": true,
-    "declarationMap": true,
-    "composite": true,
-    "rootDir": ".",
+    "rootDir": "./src",
     "outDir": "./dist",
-    "target": "ESNext",
-    "lib": ["DOM", "DOM.Iterable", "ESNext"]
+    "lib": ["DOM", "DOM.Iterable", "ES2020"],
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": ["./src/*"]
+    }
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "index.ts"]
+  "include": ["src/**/*.ts", "src/**/*.tsx"]
 }

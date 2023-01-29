@@ -2,7 +2,18 @@
   "name": "server-shared",
   "version": "0.0.1",
   "private": true,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "swc -w ./src -d ./dist --config-file ../.swcrc",
+    "build": "tsc -b && swc ./src -d ./dist --config-file ../.swcrc"
+  },
   "devDependencies": {
+    "@swc/cli": "^0.1.59",
+    "@swc/core": "^1.3.30",
+    "@types/node": "^18.11.18",
+    "chokidar": "^3.5.3",
     "typescript": "^4.9.3"
-  }
+  },
+  "type": "module"
 }

@@ -1,0 +1,19 @@
+{
+  "extends": "../tsconfig.root.json",
+  "compilerOptions": {
+    "composite": true,
+    "rootDir": "./src",
+    "target": "ES2017",
+    "lib": ["ES2017"],
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": ["./src/*"]
+    },
+    "module": "ESNext"
+  },
+  "include": ["src/**/*.ts"],
+  "ts-node": {
+    "esm": true,
+    "swc": true
+  }
+}
