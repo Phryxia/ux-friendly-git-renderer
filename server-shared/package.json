@@ -5,8 +5,8 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "dev": "swc -w ./src -d ./dist --config-file ../.swcrc",
-    "build": "tsc -b && swc ./src -d ./dist --config-file ../.swcrc"
+    "build": "tsc -b && swc ./src -d ./dist",
+    "dev": "swc -w ./src -d ./dist"
   },
   "devDependencies": {
     "@swc/cli": "^0.1.59",
