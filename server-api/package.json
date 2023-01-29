@@ -1,0 +1,11 @@
+{
+  "name": "server-api",
+  "version": "0.0.1",
+  "private": true,
+  "devDependencies": {
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "fastify": "^4.11.0"
+  }
+}

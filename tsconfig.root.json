@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "noImplicitAny": true,
+    "allowSyntheticDefaultImports": true,
+    "rootDir": "."
+  },
+  "references": [
+    { "path": "./common-shared" },
+    { "path": "./server-shared" },
+    { "path": "./web-shared" }
+  ]
+}

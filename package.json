@@ -1,0 +1,21 @@
+{
+  "name": "ux-friendly-git-renderer",
+  "version": "0.0.1",
+  "repository": "git@github.com:Phryxia/ux-friendly-git-renderer.git",
+  "author": "Phryxia <xahhaepica@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "common-shared",
+    "web-shared",
+    "web-client",
+    "server-shared",
+    "server-api"
+  ],
+  "devDependencies": {
+    "prettier": "2.8.3"
+  },
+  "scripts": {
+    "dev:web-client": "parallel --ungroup ::: \"yarn workspace common-shared dev\" \"yarn workspace web-shared dev\" \"yarn workspace web-client dev\""
+  }
+}
